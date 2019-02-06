@@ -5,12 +5,13 @@
 	--base-seventy: rgba(255, 255, 255, 0.7);
 	--base-fifty: rgba(255, 255, 255, 0.5);
 	--base-fourty: rgba(255, 255, 255, 0.4);
-	--base-thiry: rgba(255, 255, 255, 0.3);
+	--base-thirty: rgba(255, 255, 255, 0.3);
 	--base-twenty: rgba(255, 255, 255, 0.2);
-	--base-five: rgba(255, 255, 255, 0.05);
 	--base-ten: rgba(255, 255, 255, 0.1);
 	--base-nine: rgba(255, 255, 255, 0.09);
-	--container-color: #1e1e1e;
+	--base-five: rgba(255, 255, 255, 0.05);
+	--container-color: #323232;
+	--container-dark-color: #1e1e1e;
 	--list-header-color: #222;
 	--blue: #0084ff;
 }
@@ -42,16 +43,6 @@ html.dark-mode ._hh7._2f5r {
 	background: none !important;
 }
 
-/* Message list: remove border from messages */
-._hh7._aol {
-	border-color: transparent !important;
-}
-
-/* Fix dark mode overriding colors for code snippets */
-html.dark-mode ._wu0 {
-	color: var(--base);
-}
-
 /* Message list: link in your message bubble */
 html.dark-mode ._o46:not(._nd_) ._hh7 a {
 	color: var(--base-seventy);
@@ -78,6 +69,7 @@ html.dark-mode ._5i_d .__6l {
 	color: var(--base-seventy);
 }
 
+/* Message list: link preview domain */
 html.dark-mode ._5i_d .__6m {
 	color: var(--base-fourty);
 }
@@ -125,22 +117,22 @@ html.dark-mode ._2n3t {
 
 /* Message list: header above (event) */
 html.dark-mode ._2n3u {
-	color: var(--base-thiry);
+	color: var(--base-thirty);
 }
 
 /* Message list: header above (event menu small text) */
 html.dark-mode ._4x7m {
-	color: var(--base-thiry);
+	color: var(--base-thirty);
 }
 
 /* Message list: header above (event menu small text) */
 html.dark-mode ._4x79 {
-	color: var(--base-thiry);
+	color: var(--base-thirty);
 }
 
 /* Message list: header above (event menu small text) */
 html.dark-mode ._4x7b {
-	color: var(--base-thiry);
+	color: var(--base-thirty);
 }
 
 /* Message list: header above (invitation) */
@@ -170,6 +162,11 @@ html.dark-mode ._1n-e {
 	color: var(--base-fourty);
 }
 
+/* Messages list: typical response time */
+html.dark-mode ._7blb {
+	color: var(--base-seventy);
+}
+
 /* Messages list: event box (event name) */
 html.dark-mode ._618l {
 	color: var(--base-seventy);
@@ -182,7 +179,7 @@ html.dark-mode ._618m {
 
 /* Messages list: event box (event description) */
 html.dark-mode ._618n {
-	color: var(--base-thiry);
+	color: var(--base-thirty);
 }
 
 /* Messages list: event box (line) */
@@ -196,6 +193,9 @@ html.dark-mode ._17w2,
 html.dark-mode ._ih3 ._3oh-,
 html.dark-mode ._llq ._3oh- {
 	color: var(--base-seventy);
+}
+html.dark-mode ._llq ._3oh- a {
+	color: var(--blue);
 }
 
 html.dark-mode ._2v6o {
@@ -211,6 +211,23 @@ html.dark-mode ._5pd7 {
 html.dark-mode ._jf4 ._jf3 {
 	background-color: var(--base-five) !important;
 	color: var(--base-fourty) !important;
+}
+
+/* Messages list: start conversation with a chat bot */
+html.dark-mode ._2xh0 ._3zc8 {
+	background-color: transparent;
+	color: var(--base-fourty);
+}
+
+/* Messages list: start conversation with a chat bot buttons */
+html.dark-mode ._2xh0 ._2xh4 {
+	background-color: transparent;
+	border-color: var(--base-ten);
+}
+
+/* Message composer: chat bot menu popover */
+html.dark-mode ._1wc4 {
+	border-top-color: var(--base-ten);
 }
 
 /* Contact list: header above */
@@ -239,7 +256,7 @@ html.dark-mode ._1qt4 {
 	border-top: solid 1px var(--base-five) !important;
 }
 
-/* contact list: person name */
+/* Contact list: person name */
 html.dark-mode ._1ht6 {
 	color: var(--base-seventy);
 }
@@ -264,7 +281,7 @@ html.dark-mode ._1ht3 ._1ht7 {
 	color: rgba(0, 132, 255, 0.7);
 }
 
-/* contact list: search results */
+/* Contact list: search results */
 html.dark-mode ._5t4c,
 html.dark-mode ._5t4c ._5l37 {
 	color: var(--base-seventy) !important;
@@ -306,6 +323,11 @@ html.dark-mode ._3quh._30yy._17u4._3yvh._1d-z {
 html.dark-mode ._4_j5 {
 	background: transparent;
 	border-left: solid 1px var(--base-five);
+}
+
+/* Right sidebar: contact name */
+html.dark-mode ._3eur a {
+  color: var(--blue);
 }
 
 /* Right sidebar: menus background */
@@ -375,6 +397,7 @@ html.dark-mode ._4jgu {
 	background-color: var(--container-color);
 }
 
+/* Invite friends popup: "Added" labels */
 html.dark-mode ._5rh4 {
 	color: var(--base-seventy);
 }
@@ -403,12 +426,12 @@ html.dark-mode ._2y8_ {
 
 /* New conversation contact list: popup hr */
 html.dark-mode ._5l38 {
-	border-top: 1px solid var(--base-ten);
+	border-top: 1px solid var(--base-ten) !important;
 }
 
 /* New conversation contact list: popup hover */
 html.dark-mode ._1k1p ._5l38 {
-	border-top: none;
+	border-top-color: transparent;
 }
 html.dark-mode ._5l37:active,
 html.dark-mode ._1k1p {
@@ -418,19 +441,6 @@ html.dark-mode ._1k1p {
 /* Conversation search */
 html.dark-mode ._33p7 {
 	background-color: var(--container-color);
-}
-html.dark-mode ._33p7 ._b-u,
-html.dark-mode ._33p7 ._b-v {
-	background-color: transparent !important;
-	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/CV3cVGSAcf3.png') !important;
-	background-repeat: no-repeat !important;
-	background-size: auto !important;
-}
-html.dark-mode ._33p7 ._b-u {
-	background-position: 0 -42px !important;
-}
-html.dark-mode ._33p7 ._b-v {
-	background-position: 0 0 !important;
 }
 html.dark-mode ._33p7 input {
 	color: var(--base-seventy);
@@ -502,13 +512,6 @@ html.dark-mode ._3cn0 {
 	color: var(--base-seventy);
 }
 
-/* Bot card content */
-html.dark-mode ._3cnl,
-._3cnn a,
-._3cnj {
-	color: var(--base-fourty);
-}
-
 /* Dialogs */
 html.dark-mode ._53ij,
 html.dark-mode ._4eby,
@@ -571,8 +574,16 @@ html.dark-mode ._eb3::before {
 
 /* Sticker dialog: header borders */
 html.dark-mode ._5r8e,
-html.dark-mode ._5r86 {
+html.dark-mode ._5r86,
+html.dark-mode ._37wu,
+html.dark-mode ._37wv {
 	border-color: var(--base-five);
+}
+
+/* Sticker dialog: search input */
+html.dark-mode ._2pgc {
+	background: var(--base-ten);
+	border-color: var(--base-ten);
 }
 
 /* Record dialog: time */
@@ -580,9 +591,14 @@ html.dark-mode ._3z53 {
 	color: var(--base-seventy);
 }
 
-/* Delete popover */
+/* Message popover */
 html.dark-mode ._hw2 ._53ij {
 	background-color: var(--base-seventy) !important;
+}
+
+/* Message popover text */
+html.dark-mode ._hw2 ._53ij ._hw5 {
+	color: var(--base);
 }
 
 /* Login tile and names */
@@ -598,15 +614,20 @@ html.dark-mode ._55r1._5f0v._43di {
 }
 
 /* Login button */
-html.dark-mode button:not(._5upp) {
-	background: var(--container-color) !important;
+html.dark-mode ._5hy2 ._43dh {
+	background-color: transparent !important;
 }
 
-/* Fix the Sticker and Gaming buttons */
-html.dark-mode ._4rv6,
-html.dark-mode ._4ce_ {
+/* Message composer buttons */
+html.dark-mode a._4rv6, /* "Choose a sticker" */
+html.dark-mode a._4ce_ { /* "Play a game" */
 	filter: invert(1) !important;
 	opacity: 0.6 !important;
+}
+html.dark-mode ._4rv3 ._4rv4 ._5vn8, /* "Add files" */
+html.dark-mode a._39bk { /* Other icons */
+	opacity: 0.6;
+	filter: brightness(1.6);
 }
 
 /* Fix the @name-popover in the chat input box */
@@ -633,13 +654,6 @@ html.dark-mode ._53ij ._4lh2 {
 /* Gaming popover "PLAY" text color */
 html.dark-mode ._30vt ._4qba {
 	color: var(--blue);
-}
-
-/* Tomorrow dark theme for code blocks */
-html.dark-mode ._wu0 {
-	--code-block-base: #c5c8c6;
-	--code-block-background: #1d1f21;
-	--code-block-border: #0a0c14;
 }
 
 /* Plan dialog primary text */
@@ -671,23 +685,24 @@ html.dark-mode .chatAttachmentShelf {
 	color: var(--base-seventy);
 }
 html.dark-mode .chatAttachmentShelf {
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid var(--base-ten);
 }
 html.dark-mode .chatAttachmentShelf .__6k,
 html.dark-mode .chatAttachmentShelf .__6l {
 	color: inherit;
 }
 
-/* Fixes appearance of attached files */
+/* Message composer: attached files */
 html.dark-mode ._2zl5 {
-	border-color: rgba(255, 255, 255, 0.1);
+	background-color: transparent;
+	border-color: var(--base-ten);
 }
 
 html.dark-mode ._2-x5,
 html.dark-mode .__6k,
 html.dark-mode .__6l {
 	color: var(--base-seventy);
-	background: var(--container-color);
+	background: transparent;
 }
 html.dark-mode ._4gd0 {
 	background: transparent;
@@ -695,7 +710,7 @@ html.dark-mode ._4gd0 {
 
 /* Fix color on links */
 html.dark-mode .__6j._43kk {
-	border-color: rgba(255, 255, 255, 0.1) !important;
+	border-color: var(--base-ten) !important;
 }
 
 /* Fixes appearance of "Verify Account" screen text */
@@ -710,49 +725,41 @@ html.dark-mode ._6ckd ._6ckf {
 	color: var(--base-ninety);
 }
 
-/* -- Vibrancy-related styles -- */
-
-/* Chat title bar (dark mode) */
-html.os-darwin.dark-mode ._673w {
-	background-color: #202026 !important;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+/* Login screen */
+html.dark-mode ._3v_o {
+	background-color: var(--container-dark-color);
 }
 
-/* Styles for vibrancy in dark mode */
-html.os-darwin.dark-mode body,
-html.os-darwin.dark-mode ._4sp8 {
-	background: rgba(0, 0, 0, 0.26) !important;
+/* Login inputs */
+html.dark-mode ._3v_o ._55r1 {
+	background: var(--base-five);
+	color: var(--base-seventy);
+}
+html.dark-mode ._3v_o ._55r1::-webkit-input-placeholder {
+	color: var(--base-thirty) !important;
 }
 
-/* Message list: header above */
-html.os-darwin.dark-mode ._5742 {
-	background: transparent !important;
+/* Forward message icon */
+html.dark-mode ._2u_d a {
+	filter: invert(1);
 }
 
-/* Contact list: header above */
-html.os-darwin.dark-mode ._36ic {
-	background: transparent !important;
+/* "Delete message" popup */
+html.dark-mode ._7492 {
+	color: var(--base-fifty);
 }
 
-/* Login button */
-html.os-darwin.dark-mode button {
-	background: transparent !important;
+/* Deleted message */
+html.dark-mode ._7301._hh7 {
+	background-color: transparent;
+	border-color: var(--base-ten) !important;
+	color: var(--base-fourty) !important;
 }
 
-/* Message container + right sidebar (dark mode) */
-html.os-darwin.dark-mode ._4_j4,
-html.os-darwin.dark-mode ._4_j5 {
-	background: #202026 !important;
+/* "Message Reactions" popup */
+html.dark-mode ._koh {
+	border-bottom-color: var(--base-five);
 }
-
-/* Contact list: search input */
-html.os-darwin.dark-mode ._5iwm ._58al {
-	background: rgba(255, 255, 255, 0.05) !important;
+html.dark-mode ._koh li:not(.selected) {
+	color: var(--base-seventy);
 }
-
-/* New conversation name input field */
-html.os-darwin.dark-mode ._2y8y {
-	background: #202026 !important;
-}
-
-/* -- End vibrancy-specific styles -- */

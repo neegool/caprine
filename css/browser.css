@@ -65,6 +65,11 @@ html.sidebar-hidden ._1enh {
 	display: none;
 }
 
+/* A utility class for temporarily hiding all dropdown menus */
+html.hide-dropdowns .uiContextualLayerPositioner {
+	visibility: hidden !important;
+}
+
 /* Hide footer at login view */
 ._210n {
 	display: none;
@@ -85,14 +90,9 @@ html.sidebar-hidden ._1enh {
 	border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Hide settings menu */
-.uiContextualLayerBelowLeft ._5v-0._53il {
-	display: none !important;
-}
-
 /* Hide settings icon */
 ._30yy._2fug._p {
-	display: none !important;
+	visibility: hidden !important;
 }
 
 /* Hide title */
@@ -222,117 +222,6 @@ a,
 	height: 280px;
 }
 
-/* Tomorrow light theme for code blocks */
-._wu0 {
-	--code-block-base: #1d1f21;
-	--code-block-background: #fff;
-	--code-block-border: #b9b9b9;
-	--code-block-primary: #de935f;
-	--code-block-meta: #969896;
-	--code-block-tag: #a3685a;
-	--code-block-quoted: #b5bd68;
-	--code-block-variable: #c66;
-	--code-block-special: #8abeb7;
-	--code-block-attr-value: #139543;
-	--code-block-keyword: #b294bb;
-	--code-block-function: #81a2be;
-	background-color: var(--code-block-background) !important;
-	border: 1px solid var(--code-block-border) !important;
-	color: var(--code-block-base) !important;
-}
-._wu0 .token.punctuation {
-	color: var(--code-block-base) !important;
-}
-._wu0 .token.property {
-	color: var(--code-block-base) !important;
-}
-._wu0 .token.operator {
-	color: var(--code-block-base) !important;
-}
-._wu0 .token.boolean {
-	color: var(--code-block-primary) !important;
-}
-._wu0 .token.number {
-	color: var(--code-block-primary) !important;
-}
-._wu0 .token.constant {
-	color: var(--code-block-primary) !important;
-}
-._wu0 .token.selector {
-	color: var(--code-block-primary) !important;
-}
-._wu0 .token.bold {
-	color: var(--code-block-primary) !important;
-	font-weight: bold;
-}
-._wu0 .token.comment {
-	color: var(--code-block-meta) !important;
-}
-._wu0 .token.prolog {
-	color: var(--code-block-meta) !important;
-}
-._wu0 .token.doctype {
-	color: var(--code-block-meta) !important;
-}
-._wu0 .token.cdata {
-	color: var(--code-block-meta) !important;
-}
-._wu0 .token.tag {
-	color: var(--code-block-tag) !important;
-}
-._wu0 .token.symbol {
-	color: var(--code-block-quoted) !important;
-}
-._wu0 .token.string {
-	color: var(--code-block-quoted) !important;
-}
-._wu0 .token.char {
-	color: var(--code-block-quoted) !important;
-}
-._wu0 .token.inserted {
-	color: var(--code-block-quoted) !important;
-}
-._wu0 .token.attr-name {
-	color: var(--code-block-variable) !important;
-}
-._wu0 .token.url {
-	color: var(--code-block-variable) !important;
-}
-._wu0 .token.entity {
-	color: var(--code-block-variable) !important;
-}
-._wu0 .token.variable {
-	color: var(--code-block-variable) !important;
-}
-._wu0 .token.deleted {
-	color: var(--code-block-variable) !important;
-}
-._wu0 .token.builtin {
-	color: var(--code-block-special) !important;
-}
-._wu0 .token.hexcode {
-	color: var(--code-block-special) !important;
-}
-._wu0 .token.regex {
-	color: var(--code-block-special) !important;
-}
-._wu0 .token.attr-value {
-	color: var(--code-block-attr-value) !important;
-}
-._wu0 .token.keyword {
-	color: var(--code-block-keyword) !important;
-}
-._wu0 .token.important {
-	color: var(--code-block-keyword) !important;
-}
-._wu0 .token.italic {
-	color: var(--code-block-keyword) !important;
-	font-style: italic;
-}
-._wu0 .token.function {
-	color: var(--code-block-function) !important;
-}
-
 /* Hide hidden accessibility elements so they're not included in copy-pasting of chat logs */
 .accessible_elem {
 	display: none !important;
@@ -395,50 +284,9 @@ a,
 	display: none !important;
 }
 
-/* -- Vibrancy-specific styles -- */
-
-html.os-darwin body,
-html.os-darwin ._4sp8 {
-	background: transparent !important;
+/* Message composer buttons */
+a._4rv6, /* "Choose a sticker" */
+a._4ce_ { /* "Play a game" */
+	opacity: 1 !important;
+	filter: invert(0.66);
 }
-
-/* Message placeholder text color */
-html.os-darwin ._kmc ._1p1t {
-	color: #999 !important;
-	-webkit-text-fill-color: #999 !important;
-}
-
-/* Contact list: search input */
-html.os-darwin ._5iwm ._58al {
-	background-color: rgba(246, 247, 249, 0.5) !important;
-}
-
-/* Chat title bar (light mode) */
-html.os-darwin ._673w {
-	background-color: #fff !important;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* Share previews: title and subtitle */
-html.os-darwin .__6k,
-html.os-darwin .__6l {
-	background-color: transparent !important;
-}
-
-/* Contact list: person container */
-html.os-darwin ._1qt4 {
-	border-top: solid 1px rgba(0, 0, 0, 0.06);
-}
-
-/* Message container + right sidebar (light mode) */
-html.os-darwin ._4_j4,
-html.os-darwin ._4_j5 {
-	background: #fff !important;
-}
-
-/* New conversation name input field */
-html.os-darwin ._2y8y {
-	background: #fff !important;
-}
-
-/* -- End vibrancy-specific styles -- */
